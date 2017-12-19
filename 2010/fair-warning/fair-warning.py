@@ -1,5 +1,4 @@
 import sys
-import os
 from fractions import math
 from functools import reduce
 
@@ -23,8 +22,7 @@ def solve_apocalypse(input_array):
 
 if __name__ == "__main__":
 
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    out_file = open(dir_path + '/out-large.txt','w')
+    out_file = open(sys.argv[2],'w')
     in_file = open(sys.argv[1],'r')
     in_file.readline()
     case = 1
