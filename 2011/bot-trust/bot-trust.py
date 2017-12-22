@@ -88,7 +88,6 @@ if __name__ == "__main__":
     in_file.readline()
     case = 1
     for line in in_file:
-        input = line.partition(' ')
         robots = init_robot_dict(line.partition(' ')[2])
         result = solve_bot_trust(robots)
         out_file.write('Case #%s: %s\n' % (str(case), str(result)))
